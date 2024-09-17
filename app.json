@@ -28,5 +28,8 @@
   "runtime": "14.0",
   "features": [
     "NoImplicitWith"
-  ]
+  ],
+  "source": {
+    "repositoryUrl": "https://github.com/waldo1001/waldo.DemoBC2024W2"
+  }
 }

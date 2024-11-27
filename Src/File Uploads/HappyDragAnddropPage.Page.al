@@ -9,9 +9,9 @@ page 50102 HappyDragAnddropPage
     {
         area(Content)
         {
-            group(GroupName)
+            group(Upload)
             {
-                FileUploadAction = ProductImageUpload;
+                // FileUploadAction = ProductImageUpload;
 
                 field(name; 'Name')
                 {

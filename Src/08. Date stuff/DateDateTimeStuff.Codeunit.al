@@ -7,11 +7,11 @@ codeunit 50103 DateDateTimeStuff
     begin
         // mydate.
 
+    end;
 
-
-
-
-
+    local procedure IsItFriday(var MyDate: Date): Boolean
+    begin
+        exit(MyDate.DayOfWeek = 5);
     end;
 
     local procedure Timestuff()
@@ -20,11 +20,6 @@ codeunit 50103 DateDateTimeStuff
     begin
         // MyTime.
 
-
-
-
-
-
     end;
 
     local procedure DateTimestuff()
@@ -32,10 +27,6 @@ codeunit 50103 DateDateTimeStuff
         MyDateTime: DateTime;
     begin
         // MyDateTime.Time.
-
-
-
-
 
 
     end;

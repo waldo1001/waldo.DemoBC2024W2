@@ -29,7 +29,8 @@ codeunit 50108 "Test this"
             .Add('NickName', 'waldo')
             .Add('Age', 47)
             .Add('Mental Age', 12);
-        JsonObject.InitObjectProperty('Address')
+        JsonObject
+            .InitObjectProperty('Address')
             .Add('Street', '123 Main St')
             .Add('City', 'Anytown')
             .Add('State', 'CA')

@@ -1,4 +1,4 @@
-profileextension "WaldosProfile" extends "Business Manager Evaluation"
+profileextension "BusMgrEvalExtension" extends "Business Manager Evaluation"
 {
     Caption = 'waldo''s Profile';
     ProfileDescription = 'This is a profile "for waldo"';

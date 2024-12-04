@@ -1,19 +1,15 @@
 codeunit 50102 "Demo - SaveAsJson"
 {
-    var
-        JustACustomerQuery: Query "Just A Customer Query";
-
     procedure DemoSaveAsJson()
     var
-        Result: Boolean;
+        TempBlob: Codeunit "Temp Blob";
+        JustACustomerQuery: Query "Just A Customer Query";
         OutStr: OutStream;
         InStr: InStream;
         ToFile: Text;
-        TempBlob: Codeunit "Temp Blob";
-        FileManagement: Codeunit "File Management";
     begin
         TempBlob.CreateOutStream(OutStr);
-        Result := JustACustomerQuery.SaveAsJson(OutStr);
+        JustACustomerQuery.SaveAsJson(OutStr);
         TempBlob.CreateInStream(InStr);
 
         Tofile := 'TheJsonFile.json';

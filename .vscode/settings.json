@@ -1,0 +1,8 @@
+{
+    "al.ruleSetPath": ".rulesets\\ruleset.json",
+    "al.enableCodeActions": true,
+    "al.codeAnalyzers": [
+        "${CodeCop}"
+    ],
+    "al.enableCodeAnalysis": true
+}

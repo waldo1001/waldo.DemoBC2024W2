@@ -24,10 +24,11 @@ codeunit 50106 "Test Interfaces"
     var
         IScaleExt: Interface IScaleExt;
     begin
-        if not (IScale is IScaleExt) then
+        // Now we need to access the new methods!
+        if not (IScale is IScaleExt) then // Check if the interface is the extended one
             exit(false);
 
-        IScaleExt := IScale as IScaleExt;
+        IScaleExt := IScale as IScaleExt; // Cast the interface to the extended one
         exit(IScaleExt.Tare());
     end;
 }

@@ -1,0 +1,16 @@
+{
+    "name": "DemoBC2024W2",
+    "description": "DemoBC2024W2",
+    "rules": [
+        {
+            "id": "AA0248",
+            "action": "Hidden",
+            "justification": "Add 'this' qualification to improve readability"
+        },
+        {
+            "id": "AA0218",
+            "action": "Hidden",
+            "justification": "Tooltips are not required for demos"
+        }
+    ]
+}

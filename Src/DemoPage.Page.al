@@ -31,6 +31,15 @@ page 50100 DemoPage
                     codeunit.run(codeunit::"Test this");
                 end;
             }
+            action(HappyDragAndDrop)
+            {
+                Caption = 'Happy Drag and Drop';
+
+                trigger OnAction()
+                begin
+                    page.run(page::HappyDragAnddropPage);
+                end;
+            }
 
             action(QuerySaveAsJson)
             {
@@ -41,6 +50,15 @@ page 50100 DemoPage
                     DemoSaveAsJson: Codeunit "Demo - SaveAsJson";
                 begin
                     DemoSaveAsJson.DemoSaveAsJson();
+                end;
+            }
+            action(DragAndDrop)
+            {
+                Caption = 'Drag and Drop';
+
+                trigger OnAction()
+                begin
+                    page.run(page::HappyDragAnddropPage);
                 end;
             }
         }

@@ -29,16 +29,16 @@ pageextension 50100 CustListExt extends "Customer List"
     var
         MyPageStyle: PageStyle;
     begin
-        if (Rec."Credit Limit (LCY)" <> 0) then
-            if Rec."Balance (LCY)" > Rec."Credit Limit (LCY)" then
-                MyPageStyle := PageStyle::Unfavorable
-            else
-                MyPageStyle := PageStyle::Favorable
-        else
-            MyPageStyle := PageStyle::None;
+        // if (Rec."Credit Limit (LCY)" <> 0) then
+        //     if Rec."Balance (LCY)" > Rec."Credit Limit (LCY)" then
+        //         MyPageStyle := PageStyle::Unfavorable
+        //     else
+        //         MyPageStyle := PageStyle::Favorable
+        // else
+        //     MyPageStyle := PageStyle::None;
 
         // With a Ternary Operator:
-        // MyPageStyle := Rec."Credit Limit (LCY)" = 0 ? PageStyle::None : Rec."Balance (LCY)" > Rec."Credit Limit (LCY)" ? PageStyle::Unfavorable : PageStyle::Favorable;
+        MyPageStyle := Rec."Credit Limit (LCY)" = 0 ? PageStyle::None : Rec."Balance (LCY)" > Rec."Credit Limit (LCY)" ? PageStyle::Unfavorable : PageStyle::Favorable;
 
         BalanceStyleExpr := format(MyPageStyle);
     end;

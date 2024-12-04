@@ -31,5 +31,9 @@
   ],
   "source": {
     "repositoryUrl": "https://github.com/waldo1001/waldo.DemoBC2024W2"
+  },
+  "build": {
+    "by": "ALOps",
+    "url": "https://alops.be"
   }
 }

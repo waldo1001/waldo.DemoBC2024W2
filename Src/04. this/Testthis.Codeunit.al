@@ -28,13 +28,12 @@ codeunit 50108 "Test this"
         JsonObject
             .Add('NickName', 'waldo')
             .Add('Age', 47)
-            .Add('Mental Age', 12);
-        JsonObject
+            .Add('Mental Age', 12)
             .InitObjectProperty('Address')
-            .Add('Street', '123 Main St')
-            .Add('City', 'Anytown')
-            .Add('State', 'CA')
-            .Add('Zip', '12345');
+                .Add('Street', '123 Main St')
+                .Add('City', 'Anytown')
+                .Add('State', 'CA')
+                .Add('Zip', '12345');
 
         Message(JsonObject.AsText());
     end;

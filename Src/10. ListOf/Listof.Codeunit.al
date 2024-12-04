@@ -1,3 +1,4 @@
+#pragma warning disable AA0217
 codeunit 50112 "List of"
 {
     procedure DoALotOfWork(var implementations: List of [Interface "IScale"])
